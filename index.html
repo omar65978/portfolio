@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Omar Ali - Frontend Developer based in Cairo, Egypt. Building responsive, accessible, high-performance web apps with React.js, Next.js and Angular." />
+  <meta name="author" content="Omar Ali" />
+  <meta name="theme-color" content="#0a0b14" />
+
+  <title>Omar Ali · Frontend Developer</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Omar Ali · Frontend Developer" />
+  <meta property="og:description" content="Building responsive, accessible, high-performance web apps with React.js, Next.js & Angular." />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%237c5cff'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='700' text-anchor='middle' fill='white'%3EO%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Ambient glow -->
+  <div class="ambient ambient--violet"></div>
+  <div class="ambient ambient--cyan"></div>
+
+  <!-- ============== NAV ============== -->
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="#home" class="logo">omar<span>.ali</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+      <button class="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============== HERO ============== -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div>
+            <p class="hero-eyebrow">Hi, my name is</p>
+            <h1>Omar <span class="gradient-text">Ali</span>.</h1>
+            <p class="role">I build <span data-role='["responsive UIs.","React & Next.js apps.","pixel-perfect interfaces.","fast web experiences."]'>responsive UIs.</span></p>
+            <p class="tagline">
+              Results-driven Frontend Developer with over 1 year of experience specializing in <strong style="color:var(--text)">React.js, Next.js, and Angular</strong> to build responsive, accessible, high-performance, SEO-friendly web applications. I deliver UI/UX designs as pixel-perfect interfaces, integrate RESTful APIs, and write clean, modular code in Agile environments — always focused on performance optimization and scalable architecture.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn--primary">
+                View my work
+                <span aria-hidden="true">→</span>
+              </a>
+              <a href="assets/Omar_Ali_Frontend_Developer_CV.pdf" download class="btn btn--ghost">
+                <span aria-hidden="true">↓</span> Download CV
+              </a>
+              <a href="https://github.com/omar65978" target="_blank" rel="noopener" class="btn btn--ghost">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.97 3.22 9.19 7.69 10.68.56.1.76-.24.76-.54 0-.27-.01-1.17-.02-2.12-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.68.08-.68 1.13.08 1.73 1.17 1.73 1.17 1 1.72 2.64 1.22 3.28.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15.9-.25 1.86-.38 2.82-.38s1.92.13 2.82.38c2.15-1.45 3.1-1.15 3.1-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.28-5.14 5.56.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.65.77.54 4.47-1.49 7.68-5.71 7.68-10.68C23.25 5.48 18.27.5 12 .5z"/></svg>
+                GitHub
+              </a>
+            </div>
+            <div class="hero-stats reveal">
+              <div class="hero-stat">
+                <div class="num">1+</div>
+                <div class="label">Years experience</div>
+              </div>
+              <div class="hero-stat">
+                <div class="num">15+</div>
+                <div class="label">Projects delivered</div>
+              </div>
+              <div class="hero-stat">
+                <div class="num">10+</div>
+                <div class="label">APIs integrated</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-portrait reveal">
+            <div class="orbit"><span class="orbit-dot"></span></div>
+            <div class="portrait-frame">
+              <img src="assets/images/profile.jpg" alt="Portrait of Omar Ali" />
+            </div>
+            <div class="hero-badge">
+              <span class="pulse"></span> Available for work
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== ABOUT ============== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="num">01.</span>
+          <h2>About me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a Frontend Developer based in <strong style="color:var(--text)">Cairo, Egypt</strong>, passionate about building interfaces that are fast, accessible, and feel good to use. I focus on writing modular, maintainable code and translating design systems into pixel-perfect experiences.
+            </p>
+            <p>
+              My journey started with the Programming Fundamentals diploma at Route Academy, then the Advanced Frontend (React &amp; Next.js) diploma — graduating as a <strong style="color:var(--accent-3)">Top Achiever</strong>. I was also selected for the <em>Digital Egypt Pioneers Initiative (DEPI)</em> by the Ministry of Communications &amp; IT, specializing in React Frontend Web Development.
+            </p>
+            <p>
+              Outside of code, I've worked as a freelance graphic designer since 2023 — which gives me an eye for typography, spacing, and visual hierarchy on every project I build.
+            </p>
+            <ul class="about-highlights">
+              <li>Responsive Web Development with React.js, Next.js &amp; Angular</li>
+              <li>Single-Page Applications (SPAs) with modular, reusable components</li>
+              <li>Asynchronous data handling with modern JavaScript (ES6+) &amp; RESTful APIs</li>
+              <li>State management with Redux Toolkit, TanStack Query &amp; Context API</li>
+              <li>Pixel-perfect UI conversion from Figma &amp; Zeplin designs</li>
+              <li>Performance optimization, scalability and cross-browser compatibility</li>
+              <li>JWT authentication &amp; Node.js backend integration basics</li>
+              <li>Agile/Scrum, Git workflows, peer code reviews &amp; CI/CD fundamentals</li>
+            </ul>
+          </div>
+
+          <aside class="about-card reveal">
+            <h3>Quick facts</h3>
+            <div class="info-row">
+              <span class="label">Name</span>
+              <span class="value">Omar Ali Abbas Ali</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Role</span>
+              <span class="value">Frontend Developer</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Location</span>
+              <span class="value">Cairo, Egypt</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Email</span>
+              <span class="value" style="font-family:var(--font-mono);font-size:0.82rem;">omar65978@gmail.com</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Phone</span>
+              <span class="value" style="font-family:var(--font-mono);font-size:0.88rem;">+20 112 532 1208</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Education</span>
+              <span class="value">B.Sc. Computers &amp; AI — Benha Univ.</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Languages</span>
+              <span class="value" style="font-size:0.88rem;">
+                <span style="color:var(--text-dim)">Arabic:</span> Native &nbsp;·&nbsp;
+                <span style="color:var(--text-dim)">English:</span> Professional working proficiency
+              </span>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Core Competencies -->
+        <div class="competencies reveal" style="margin-top:56px;">
+          <h3 style="font-family:var(--font-mono); font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:.12em; margin-bottom:24px; font-weight:500;">// Core Competencies</h3>
+          <div class="competencies-grid">
+            <div class="competency-col">
+              <h4 class="competency-title">Technical Skills</h4>
+              <ul class="competency-list">
+                <li>Responsive Web Development using React.js &amp; Angular</li>
+                <li>Building Single-Page Applications (SPAs) with modular components</li>
+                <li>Asynchronous data handling with modern JavaScript (ES6+)</li>
+                <li>Performance Optimization &amp; Scalability</li>
+              </ul>
+            </div>
+            <div class="competency-col">
+              <h4 class="competency-title">Professional Skills</h4>
+              <ul class="competency-list">
+                <li>Analytical Thinking &amp; Problem Solving</li>
+                <li>Agile/Scrum Methodology (Sprint Planning &amp; Standups)</li>
+                <li>Cross-functional Collaboration (UI/UX, Backend, QA)</li>
+                <li>Clean, maintainable code &amp; peer code reviews</li>
+              </ul>
+            </div>
+            <div class="competency-col">
+              <h4 class="competency-title">Tools &amp; Platforms</h4>
+              <ul class="competency-list">
+                <li>Git &amp; Collaborative Workflows</li>
+                <li>Design tools: Figma &amp; Zeplin</li>
+                <li>Cross-browser &amp; Cross-platform Testing</li>
+                <li>Debugging across development/production environments</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SKILLS ============== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="num">02.</span>
+          <h2>Skills &amp; tools</h2>
+        </div>
+
+        <div class="skills-groups">
+          <div class="skill-group reveal">
+            <div class="skill-group-title">// Frameworks &amp; Libraries</div>
+            <div class="skill-pills">
+              <span class="skill-pill">React.js</span>
+              <span class="skill-pill">Next.js</span>
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">Angular CDK</span>
+              <span class="skill-pill">React Router</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">// Languages</div>
+            <div class="skill-pills">
+              <span class="skill-pill">JavaScript (ES6+)</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">SCSS</span>
+              <span class="skill-pill">C++</span>
+              <span class="skill-pill">Python</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">// UI, Styling &amp; Design</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Tailwind CSS</span>
+              <span class="skill-pill">Angular Material</span>
+              <span class="skill-pill">Bootstrap</span>
+              <span class="skill-pill">Hero UI</span>
+              <span class="skill-pill">Sass</span>
+              <span class="skill-pill">Responsive Design</span>
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">Zeplin</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">// Accessibility &amp; UX quality</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Semantic HTML</span>
+              <span class="skill-pill">ARIA roles &amp; labels</span>
+              <span class="skill-pill">Keyboard navigation</span>
+              <span class="skill-pill">Focus management</span>
+              <span class="skill-pill">prefers-reduced-motion</span>
+              <span class="skill-pill">Contrast checks</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">// State &amp; Data</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Redux Toolkit</span>
+              <span class="skill-pill">Context API</span>
+              <span class="skill-pill">TanStack Query</span>
+              <span class="skill-pill">Angular Signals</span>
+              <span class="skill-pill">Axios</span>
+              <span class="skill-pill">RESTful APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">// Backend &amp; Auth</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Node.js (basics)</span>
+              <span class="skill-pill">Express</span>
+              <span class="skill-pill">JWT Authentication</span>
+              <span class="skill-pill">JSON-Server</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">// Testing &amp; QA</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Vitest</span>
+              <span class="skill-pill">Karma / Jasmine</span>
+              <span class="skill-pill">Postman</span>
+              <span class="skill-pill">Cross-browser Testing</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">// Build, Git &amp; Deploy</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Vite</span>
+              <span class="skill-pill">npm</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">CI/CD</span>
+              <span class="skill-pill">Vercel</span>
+              <span class="skill-pill">Docker (basics)</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">// Practices &amp; Collaboration</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Agile / Scrum</span>
+              <span class="skill-pill">Jira</span>
+              <span class="skill-pill">Code Reviews</span>
+              <span class="skill-pill">OOP</span>
+              <span class="skill-pill">SOLID Principles</span>
+              <span class="skill-pill">Design Patterns</span>
+              <span class="skill-pill">Clean Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== EXPERIENCE ============== -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="num">03.</span>
+          <h2>Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">Feb 2026 — Present · Cairo, Egypt (Hybrid)</div>
+            <h3 class="timeline-role">Frontend Developer (React / Next.js / Angular)</h3>
+            <div class="timeline-company">Next Academy</div>
+            <ul class="timeline-bullets">
+              <li>Engineered 2 Angular SPAs with modular architecture — 100% component reusability, +20% dev velocity.</li>
+              <li>Integrated RESTful APIs and used Node.js for backend services across multiple projects.</li>
+              <li>Converted Figma / Zeplin UI/UX designs into pixel-perfect, functional interfaces across all screen sizes.</li>
+              <li>Made key flows keyboard-operable and screen-reader friendly: semantic markup, ARIA labels and visible focus states.</li>
+              <li>Collaborated with UI/UX designers, backend developers and QA engineers in Agile sprints.</li>
+              <li>Debugged and resolved frontend issues across development and production environments.</li>
+              <li>Worked in Agile sprints with Git-based feature branches, code reviews, and CI.</li>
+              <li>Optimized asset loading — 30% faster initial page load across client apps.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">Nov 2024 — May 2025</div>
+            <h3 class="timeline-role">Frontend Developer (React / Next.js)</h3>
+            <div class="timeline-company">Digital Egypt Pioneers Initiative (DEPI) · MCIT</div>
+            <ul class="timeline-bullets">
+              <li>Built modern, responsive UIs with reusable React &amp; Next.js components.</li>
+              <li>Integrated 10+ REST endpoints using TanStack Query + Axios — 25% faster rendering.</li>
+              <li>Participated in Agile sprints, Git workflows, and cross-team code reviews.</li>
+              <li>Improved usability via performance tuning and responsive design across devices.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">Aug 2023 — Nov 2024 &nbsp;·&nbsp; May 2025 — Present</div>
+            <h3 class="timeline-role">Freelance Graphic Designer</h3>
+            <div class="timeline-company">
+              <a href="https://mostaql.com/u/omar65978/portfolio" target="_blank" rel="noopener" style="color:var(--accent-2)">
+                mostaql.com/u/omar65978 →
+              </a>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Delivered visual identity and marketing designs that grew brand engagement.</li>
+              <li>Translated client briefs into polished digital assets using professional design tools.</li>
+              <li>Managed multiple concurrent projects while upholding brand guidelines.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== PROJECTS ============== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="num">04.</span>
+          <h2>Featured projects</h2>
+        </div>
+
+        <p class="projects-lead reveal">
+          Six builds, ordered by <strong>scope and production readiness</strong> — the multi-app flagship first, framework demos last. The two clinic projects sit side by side: the patient-facing portal and its staff dashboard.
+        </p>
+
+        <div class="projects-grid">
+
+          <article class="project-card project-card--featured reveal">
+            <span class="project-badge"><em>01 —</em> Featured · Multi-app platform</span>
+            <div class="project-featured-header">
+              <span class="project-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </span>
+              <h3>Customer Support Operations Platform</h3>
+              <div class="project-links">
+                <a href="https://github.com/omar65978/Customer-Support-Operations-Platform" target="_blank" rel="noopener" class="primary-link" aria-label="GitHub repository">⌨ View on GitHub</a>
+              </div>
+            </div>
+
+            <div class="project-modules">
+              <!-- Module 1: Customer Portal -->
+              <div class="project-module">
+                <div class="project-module-head">
+                  <span class="project-module-dot"></span>
+                  <h4>Customer-Portal-Website (React)</h4>
+                  <a href="https://customer-support-operations-platfor-taupe.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo" style="font-family:var(--font-mono);font-size:.78rem;color:var(--accent-2);">↗ Live Demo</a>
+                </div>
+                <div class="module-row">
+                  <span class="key">// Overview</span>
+                  <span class="val">A customer-facing support portal allowing users to securely track, filter, and reply to their personal support requests.</span>
+                </div>
+                <div class="module-row">
+                  <span class="key">// Implementation</span>
+                  <span class="val">Built with <strong style="color:var(--text)">React 19, Vite, TypeScript, and Tailwind CSS</strong>, featuring server-side paginated request lists and complex file attachment handling with type/size validation.</span>
+                </div>
+                <div class="module-row">
+                  <span class="key">// Security &amp; Testing</span>
+                  <span class="val">Implemented strict JWT access controls to isolate user data, achieving <strong style="color:var(--accent-3)">100% test passing rates</strong> using Vitest.</span>
+                </div>
+                <div class="project-tags" style="margin-top:16px;">
+                  <span class="project-tag">React 19</span>
+                  <span class="project-tag">Vite</span>
+                  <span class="project-tag">TypeScript</span>
+                  <span class="project-tag">Tailwind</span>
+                  <span class="project-tag">JWT</span>
+                  <span class="project-tag">Vitest</span>
+                </div>
+              </div>
+
+              <!-- Module 2: Support Workspace Dashboard -->
+              <div class="project-module">
+                <div class="project-module-head">
+                  <span class="project-module-dot"></span>
+                  <h4>Support-Workspace-Dashboard (Angular)</h4>
+                  <a href="https://customer-support-operations-platfor-murex.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo" style="font-family:var(--font-mono);font-size:.78rem;color:var(--accent-2);">↗ Live Demo</a>
+                </div>
+                <div class="module-row">
+                  <span class="key">// Overview</span>
+                  <span class="val">A comprehensive administrative workspace for agents and managers to oversee support tickets, manage assignments, and control internal workflows.</span>
+                </div>
+                <div class="module-row">
+                  <span class="key">// Implementation</span>
+                  <span class="val">Developed using <strong style="color:var(--text)">Angular 18 and Angular Material</strong>, implementing dynamic role-based routing (Agent/Manager view) and advanced server-side data grid operations.</span>
+                </div>
+                <div class="module-row">
+                  <span class="key">// Performance &amp; Reliability</span>
+                  <span class="val">Ensured robust data handling and seamless status validation, achieving a <strong style="color:var(--accent-3)">clean production build and perfect test coverage</strong> with Karma/Jasmine.</span>
+                </div>
+                <div class="project-tags" style="margin-top:16px;">
+                  <span class="project-tag">Angular 18</span>
+                  <span class="project-tag">Angular Material</span>
+                  <span class="project-tag">TypeScript</span>
+                  <span class="project-tag">Role-based routing</span>
+                  <span class="project-tag">Karma</span>
+                  <span class="project-tag">Jasmine</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--wide reveal">
+            <span class="project-badge"><em>02 —</em> Production-ready · Deployed on Vercel</span>
+            <div class="project-wide">
+              <div class="project-wide-main">
+                <div class="project-head">
+                  <span class="project-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M15 4v16"/><rect x="10.9" y="7" width="3.2" height="4" rx=".8" fill="currentColor" stroke="none"/></svg>
+            </span>
+                  <h3 class="project-title">Kanban Task Management App</h3>
+                </div>
+                <p class="project-desc">
+                  A production-ready Kanban task management web app built with <strong style="color:var(--text)">Angular 20</strong>, signals-based state, and Angular CDK Drag-and-Drop. Users manage boards, columns, and tasks with fluid drag-and-drop reordering, while a fully reactive signal-driven architecture keeps the UI instantly in sync — no manual change detection.
+                </p>
+                <ul class="project-wide-points">
+                  <li>Signal store only — no NgRx, no manual change detection</li>
+                  <li>CDK Drag-and-Drop across columns with persistent board state</li>
+                  <li>Fully responsive, accessible interface, deployed on Vercel</li>
+                </ul>
+              </div>
+
+              <aside class="project-wide-rail">
+                <div class="project-links">
+                  <a href="https://kanban-management-web-app-angular.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo">↗ Live demo</a>
+                  <a href="https://github.com/omar65978/Kanban-management-web-app-angular" target="_blank" rel="noopener" aria-label="GitHub">⌨ Source</a>
+                </div>
+                <span class="rail-label">// Stack</span>
+                <div class="project-tags">
+                  <span class="project-tag">Angular 20</span>
+                  <span class="project-tag">Signals</span>
+                  <span class="project-tag">Angular CDK</span>
+                  <span class="project-tag">Drag &amp; Drop</span>
+                  <span class="project-tag">TypeScript</span>
+                  <span class="project-tag">Responsive UI</span>
+                  <span class="project-tag">Vercel</span>
+                </div>
+              </aside>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-badge"><em>03 —</em> Pixel-perfect · Figma to code</span>
+            <div class="project-head">
+              <span class="project-icon"><svg data-fill width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.3A8.6 8.6 0 1 1 10.7 3.4a6.7 6.7 0 0 0 9.9 9.9z"/></svg></span>
+              <div class="project-links">
+                <a href="https://clinic-website-gilt-eight.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo">↗ Demo</a>
+                <a href="https://github.com/omar65978/Clinic-Website" target="_blank" rel="noopener" aria-label="GitHub">⌨ GitHub</a>
+              </div>
+            </div>
+            <h3 class="project-title">Clinic Website</h3>
+            <p class="project-desc">
+              A premium clinic portal where patients browse services, view doctors, and book appointments online. Translated Figma designs into a pixel-perfect responsive React interface using the Inter font family.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">React Router</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-badge"><em>04 —</em> Performance · 35% smaller bundle</span>
+            <div class="project-head">
+              <span class="project-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M8 16V9"/><path d="M13 16V5"/><path d="M18 16v-4"/></svg>
+            </span>
+              <div class="project-links">
+                <a href="https://clinic-dashboard-angular.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo">↗ Demo</a>
+                <a href="https://github.com/omar65978/Clinic-Dashboard-Angular-" target="_blank" rel="noopener" aria-label="GitHub">⌨ GitHub</a>
+              </div>
+            </div>
+            <h3 class="project-title">Clinic Dashboard</h3>
+            <p class="project-desc">
+              A secure admin portal for clinic staff to manage patients, monitor appointments, and view real-time data. Built with Angular + Tailwind; lazy-loaded routes cut the initial bundle by 35%.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Angular</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Tailwind CSS</span>
+              <span class="project-tag">Lazy loading</span>
+              <span class="project-tag">Data viz</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-badge"><em>05 —</em> API-driven · Redux Toolkit</span>
+            <div class="project-head">
+              <span class="project-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Z"/><path d="M21 15v7"/></svg>
+            </span>
+              <div class="project-links">
+                <a href="https://yummy-app-phi.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo">↗ Demo</a>
+                <a href="https://github.com/omar65978/Yummy-App" target="_blank" rel="noopener" aria-label="GitHub">⌨ GitHub</a>
+              </div>
+            </div>
+            <h3 class="project-title">Yummy App</h3>
+            <p class="project-desc">
+              A food discovery &amp; recipes app with dynamic search, filters, and debounced input. Built with React + Redux Toolkit, integrating external REST APIs with optimized image rendering.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">Redux Toolkit</span>
+              <span class="project-tag">REST APIs</span>
+              <span class="project-tag">Debouncing</span>
+              <span class="project-tag">React Router</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-badge"><em>06 —</em> End-to-end · CRUD & REST</span>
+            <div class="project-head">
+              <span class="project-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </span>
+              <div class="project-links">
+                <a href="https://react-project-requirements.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo">↗ Demo</a>
+                <a href="https://github.com/omar65978/book-manager" target="_blank" rel="noopener" aria-label="GitHub">⌨ GitHub</a>
+              </div>
+            </div>
+            <h3 class="project-title">Book Manager</h3>
+            <p class="project-desc">
+              A full-stack Book Management application built with React (Vite) and JSON-Server. Features dynamic routing, complete book operations (CRUD), and simulated REST API integration for a complete end-to-end experience.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">Vite</span>
+              <span class="project-tag">JSON-Server</span>
+              <span class="project-tag">React Router</span>
+              <span class="project-tag">CRUD</span>
+              <span class="project-tag">REST APIs</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CERTIFICATES ============== -->
+    <section id="certificates">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="num">05.</span>
+          <h2>Certificates</h2>
+        </div>
+
+        <div class="cred-card reveal">
+          <div class="cred-head">
+            <span class="k">Professional credentials</span>
+            <span class="n">3 &middot; Route IT and DEPI / MCIT</span>
+          </div>
+
+          <ul class="cred-list">
+              <li>
+                <button type="button" class="cred-row" data-cert="assets/images/cert-route-frontend.jpg" data-caption="Advanced Frontend Development (React & Next.js) — Route IT Training Center, Aug 2025 – Feb 2026 — Top Achiever">
+                  <span class="cred-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.6 7.5 21l4.5-2.4L16.5 21l-1.1-7.4"/></svg></span>
+                  <span class="cred-txt">
+                    <span class="cred-title">Advanced Frontend Development (React &amp; Next.js) <span class="chip-award">Top Achiever</span></span>
+                    <span class="cred-meta">Route IT Training Center &middot; Aug 2025 – Feb 2026</span>
+                  </span>
+                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-route-frontend.jpg" alt="" loading="lazy" /></span>
+                  <span class="cred-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg></span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="cred-row" data-cert="assets/images/cert-depi-react.jpg" data-caption="React Frontend Web Developer — DEPI · Ministry of Communications (MCIT), Nov 2024 – May 2025">
+                  <span class="cred-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.6 7.5 21l4.5-2.4L16.5 21l-1.1-7.4"/></svg></span>
+                  <span class="cred-txt">
+                    <span class="cred-title">React Frontend Web Developer</span>
+                    <span class="cred-meta">DEPI · Ministry of Communications (MCIT) &middot; Nov 2024 – May 2025</span>
+                  </span>
+                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-depi-react.jpg" alt="" loading="lazy" /></span>
+                  <span class="cred-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg></span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="cred-row" data-cert="assets/images/cert-route-fundamentals.jpg" data-caption="Programming Fundamentals Diploma — Route IT Training Center, Dec 2023 – Apr 2024">
+                  <span class="cred-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.6 7.5 21l4.5-2.4L16.5 21l-1.1-7.4"/></svg></span>
+                  <span class="cred-txt">
+                    <span class="cred-title">Programming Fundamentals Diploma</span>
+                    <span class="cred-meta">Route IT Training Center &middot; Dec 2023 – Apr 2024</span>
+                  </span>
+                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-route-fundamentals.jpg" alt="" loading="lazy" /></span>
+                  <span class="cred-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg></span>
+                </button>
+              </li>
+          </ul>
+
+          <div class="cred-foot">
+            <span class="k">Originals</span>
+            <span class="cred-hint">Open any row to view the full-resolution scan of the certificate.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CONTACT ============== -->
+        <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-panel">
+
+          <div class="contact-pitch">
+            <div class="section-heading reveal">
+              <span class="num">06.</span>
+              <h2>Let&rsquo;s <span class="gradient-text">build something</span> together</h2>
+            </div>
+            <p class="contact-intro reveal">
+              I&rsquo;m open to Frontend Developer roles (React / Next.js, Angular) and to selected freelance
+              work. Send a brief, a job description, or a question about any project above &mdash; you&rsquo;ll
+              get a real reply from me, not an autoresponder.
+            </p>
+            <p class="contact-availability reveal">
+              <span class="pulse" aria-hidden="true"></span> Available for work &middot; Cairo, Egypt
+            </p>
+            <div class="contact-cta reveal">
+              <a href="mailto:omar65978@gmail.com?subject=Hello%20Omar" class="btn btn--primary" data-copy="omar65978@gmail.com">
+                Say hello <span aria-hidden="true">→</span>
+              </a>
+              <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=omar65978@gmail.com&amp;su=Hello%20Omar" target="_blank" rel="noopener" class="btn btn--ghost">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Open in Gmail
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-card-head">
+              <span class="k">Direct line</span>
+              <span class="n">6 ways to reach me</span>
+            </div>
+            <div class="contact-list">
+              <a class="contact-row" data-copy="omar65978@gmail.com" href="mailto:omar65978@gmail.com?subject=Hello%20Omar">
+                <span class="row-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                <span class="row-txt"><span class="row-k">Email</span><span class="row-v">omar65978@gmail.com</span></span>
+                <span class="row-go" aria-hidden="true"><svg class="ic-copy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="ic-go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+              </a>
+<a class="contact-row" data-copy="+20 112 532 1208" href="tel:+201125321208">
+                <span class="row-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span class="row-txt"><span class="row-k">Phone</span><span class="row-v">+20 112 532 1208</span></span>
+                <span class="row-go" aria-hidden="true"><svg class="ic-copy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="ic-go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+              </a>
+<div class="contact-row contact-row--static">
+                <span class="row-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <span class="row-txt"><span class="row-k">Based in</span><span class="row-v">Cairo, Egypt · open to Remote / Hybrid</span></span>
+                
+              </div>
+<a class="contact-row" href="https://github.com/omar65978" target="_blank" rel="noopener">
+                <span class="row-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.97 3.22 9.19 7.69 10.68.56.1.76-.24.76-.54 0-.27-.01-1.17-.02-2.12-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.68.08-.68 1.13.08 1.73 1.17 1.73 1.17 1 1.72 2.64 1.22 3.28.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15.9-.25 1.86-.38 2.82-.38s1.92.13 2.82.38c2.15-1.45 3.1-1.15 3.1-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.28-5.14 5.56.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.65.77.54 4.47-1.49 7.68-5.71 7.68-10.68C23.25 5.48 18.27.5 12 .5z"/></svg></span>
+                <span class="row-txt"><span class="row-k">GitHub</span><span class="row-v">github.com/omar65978</span></span>
+                <span class="row-go" aria-hidden="true"><svg class="ic-go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+              </a>
+<a class="contact-row" href="https://www.linkedin.com/in/omar-ali-b93621179" target="_blank" rel="noopener">
+                <span class="row-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></span>
+                <span class="row-txt"><span class="row-k">LinkedIn</span><span class="row-v">linkedin.com/in/omar-ali-b93621179</span></span>
+                <span class="row-go" aria-hidden="true"><svg class="ic-go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+              </a>
+<a class="contact-row" href="https://mostaql.com/u/omar65978/portfolio" target="_blank" rel="noopener">
+                <span class="row-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> <path fill-rule="evenodd" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 4.8a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4Z"/> </svg></span>
+                <span class="row-txt"><span class="row-k">Mostaql</span><span class="row-v">mostaql.com/u/omar65978/portfolio</span></span>
+                <span class="row-go" aria-hidden="true"><svg class="ic-go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+              </a>
+            </div>
+              <div class="card-foot">
+              <span class="k">Elsewhere</span>
+              <div class="social-row">
+                <a class="social-btn" href="https://github.com/omar65978" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+              <!-- GitHub icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.97 3.22 9.19 7.69 10.68.56.1.76-.24.76-.54 0-.27-.01-1.17-.02-2.12-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.68.08-.68 1.13.08 1.73 1.17 1.73 1.17 1 1.72 2.64 1.22 3.28.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15.9-.25 1.86-.38 2.82-.38s1.92.13 2.82.38c2.15-1.45 3.1-1.15 3.1-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.28-5.14 5.56.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.65.77.54 4.47-1.49 7.68-5.71 7.68-10.68C23.25 5.48 18.27.5 12 .5z"/></svg>
+            </a>
+                <a class="social-btn" href="https://www.linkedin.com/in/omar-ali-b93621179" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+                <a class="social-btn" href="mailto:omar65978@gmail.com?subject=Hello%20Omar" data-copy="omar65978@gmail.com" aria-label="Email — also copies the address" title="Email (copies the address too)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+                <a class="social-btn social-btn--brand" href="https://mostaql.com/u/omar65978/portfolio" target="_blank" rel="noopener" aria-label="Mostaql portfolio" title="Mostaql">
+              <!-- Mostaql mark, vectorised from the supplied 225px PNG. Measured geometry:
+                   outer ⌀ 117px (52.0% of tile) / inner hole 55px (24.4%) -> ratio 0.47.
+                   Redrawn as a filled annulus at 75% of the 24-box so it optically matches
+                   the GitHub + LinkedIn glyphs (currentColor, no extra HTTP request). -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 4.8a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4Z"/>
+              </svg>
+            </a>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <span style="color:var(--text)">Omar Ali</span> · <span data-year>2026</span> · Made with <span class="heart">♥</span> in Cairo</p>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
