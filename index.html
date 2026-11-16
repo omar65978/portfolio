@@ -9,11 +9,28 @@
 
   <title>Omar Ali | Frontend Developer</title>
 
-  <!-- Open Graph -->
+  <!-- Share previews. These four URLs are absolute on purpose: Facebook, LinkedIn,
+       WhatsApp and X fetch the card from their own servers and do not resolve
+       relative paths against our document, so "assets/..." silently produced no
+       image. Everything else in this file stays relative so the site still runs
+       from a folder on disk. -->
+  <link rel="canonical" href="https://omar65978.github.io/portfolio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Omar Ali" />
+  <meta property="og:url" content="https://omar65978.github.io/portfolio/" />
   <meta property="og:title" content="Omar Ali | Frontend Developer" />
   <meta property="og:description" content="Building responsive, accessible, high-performance web apps with React.js, Next.js & Angular." />
-  <meta property="og:image" content="assets/images/profile.jpg" />
-  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://omar65978.github.io/portfolio/assets/images/profile-og-1200x630.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Portrait of Omar Ali, frontend developer" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Omar Ali | Frontend Developer" />
+  <meta name="twitter:description" content="Building responsive, accessible, high-performance web apps with React.js, Next.js & Angular." />
+  <meta name="twitter:image" content="https://omar65978.github.io/portfolio/assets/images/profile-og-1200x630.jpg" />
+  <meta name="twitter:image:alt" content="Portrait of Omar Ali, frontend developer" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -68,7 +85,7 @@
             </p>
 
             <div class="hero-actions" data-seq style="--i:3">
-              <a href="#projects" class="btn btn--primary">See the projects</a>
+              <a href="#projects" class="btn btn--primary">View my work</a>
               <a href="assets/Omar_Ali_Frontend_Developer_CV.pdf" class="btn btn--ghost" data-download download>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 21h16"/></svg>
                 Download CV
@@ -84,15 +101,15 @@
 
           <figure class="proof" data-seq style="--i:2">
             <div class="proof-sheet">
-              <img src="assets/images/profile.jpg" alt="Omar Ali" width="964" height="1280" />
+              <img src="assets/images/profile.webp" alt="Omar Ali" width="800" height="1062" />
               <span class="crop crop--tl" aria-hidden="true"></span>
               <span class="crop crop--tr" aria-hidden="true"></span>
               <span class="crop crop--bl" aria-hidden="true"></span>
               <span class="crop crop--br" aria-hidden="true"></span>
             </div>
             <dl class="proof-cap">
-                      <div><dt>Portrait</dt><dd>964 &#215; 1280 px</dd></div>
-              <div><dt>Status</dt><dd><span class="pulse" aria-hidden="true"></span><span class="open">Available for work</span></dd></div>
+              <div><dt>Stack</dt><dd>React &middot; Next.js &middot; Angular</dd></div>
+              <div><dt>Open to</dt><dd><span class="pulse" aria-hidden="true"></span><span class="open">Frontend roles</span></dd></div>
             </dl>
           </figure>
         </div>
@@ -551,46 +568,46 @@
 
           <ul class="cred-list">
               <li>
-                <button type="button" class="cred-row" data-cert="assets/images/cert-next-webexpression.jpg" data-caption="Certificate of Achievement — this certifies that Omar Ali has successfully completed the Job Profile Competencies: Web Expression Frontend Developer — Next Academy · NEXT Technology Development, 30 Jun 2026 — Serial W.T-01WFD-836592">
+                <button type="button" class="cred-row" data-cert="assets/images/cert-next-webexpression.webp" data-caption="Certificate of Achievement — this certifies that Omar Ali has successfully completed the Job Profile Competencies: Web Expression Frontend Developer — Next Academy · NEXT Technology Development, 30 Jun 2026 — Serial W.T-01WFD-836592">
                   <span class="cred-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.6 7.5 21l4.5-2.4L16.5 21l-1.1-7.4"/></svg></span>
                   <span class="cred-txt">
                     <span class="cred-title">Certificate of Achievement — Web Expression Frontend Developer</span>
                     <span class="cred-meta"><span>Next Academy · NEXT Technology Development · Job Profile Competencies</span><span>30 Jun 2026</span></span>
                   </span>
-                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-next-webexpression.jpg" alt="" loading="lazy" /></span>
+                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-next-webexpression.webp" alt="" loading="lazy" /></span>
                   <span class="cred-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg></span>
                 </button>
               </li>
               <li>
-                <button type="button" class="cred-row" data-cert="assets/images/cert-route-frontend.jpg" data-caption="Advanced Frontend Development (React & Next.js) — Route IT Training Center, Aug 2025 – Feb 2026 — Top Achiever">
+                <button type="button" class="cred-row" data-cert="assets/images/cert-route-frontend.webp" data-caption="Advanced Frontend Development (React & Next.js) — Route IT Training Center, Aug 2025 – Feb 2026 — Top Achiever">
                   <span class="cred-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.6 7.5 21l4.5-2.4L16.5 21l-1.1-7.4"/></svg></span>
                   <span class="cred-txt">
                     <span class="cred-title">Advanced Frontend Development (React &amp; Next.js) <span class="chip-award">Top Achiever</span></span>
                     <span class="cred-meta"><span>Route IT Training Center</span><span>Aug 2025 – Feb 2026</span></span>
                   </span>
-                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-route-frontend.jpg" alt="" loading="lazy" /></span>
+                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-route-frontend.webp" alt="" loading="lazy" /></span>
                   <span class="cred-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg></span>
                 </button>
               </li>
               <li>
-                <button type="button" class="cred-row" data-cert="assets/images/cert-depi-react.jpg" data-caption="React Frontend Web Developer — DEPI · Ministry of Communications (MCIT), Nov 2024 – May 2025">
+                <button type="button" class="cred-row" data-cert="assets/images/cert-depi-react.webp" data-caption="React Frontend Web Developer — DEPI · Ministry of Communications (MCIT), Nov 2024 – May 2025">
                   <span class="cred-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.6 7.5 21l4.5-2.4L16.5 21l-1.1-7.4"/></svg></span>
                   <span class="cred-txt">
                     <span class="cred-title">React Frontend Web Developer</span>
                     <span class="cred-meta"><span>DEPI, Ministry of Communications (MCIT)</span><span>Nov 2024 – May 2025</span></span>
                   </span>
-                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-depi-react.jpg" alt="" loading="lazy" /></span>
+                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-depi-react.webp" alt="" loading="lazy" /></span>
                   <span class="cred-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg></span>
                 </button>
               </li>
               <li>
-                <button type="button" class="cred-row" data-cert="assets/images/cert-route-fundamentals.jpg" data-caption="Programming Fundamentals Diploma — Route IT Training Center, Dec 2023 – Apr 2024">
+                <button type="button" class="cred-row" data-cert="assets/images/cert-route-fundamentals.webp" data-caption="Programming Fundamentals Diploma — Route IT Training Center, Dec 2023 – Apr 2024">
                   <span class="cred-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.6 7.5 21l4.5-2.4L16.5 21l-1.1-7.4"/></svg></span>
                   <span class="cred-txt">
                     <span class="cred-title">Programming Fundamentals Diploma</span>
                     <span class="cred-meta"><span>Route IT Training Center</span><span>Dec 2023 – Apr 2024</span></span>
                   </span>
-                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-route-fundamentals.jpg" alt="" loading="lazy" /></span>
+                  <span class="cred-thumb" aria-hidden="true"><img src="assets/images/cert-route-fundamentals.webp" alt="" loading="lazy" /></span>
                   <span class="cred-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg></span>
                 </button>
               </li>
@@ -619,7 +636,7 @@
               get a real reply from me, not an autoresponder.
             </p>
             <p class="contact-availability">
-              <span class="pulse" aria-hidden="true"></span> Available for work in Cairo, Egypt
+              <span class="pulse" aria-hidden="true"></span> Open to Frontend roles &mdash; remote and hybrid
             </p>
             <div class="contact-cta">
               <a href="mailto:omar65978@gmail.com?subject=Hello%20Omar" class="btn btn--primary" data-copy="omar65978@gmail.com">

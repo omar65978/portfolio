@@ -27,6 +27,7 @@
   --accent-3:      #d8a44a;   /* spot gold: only for earned things           */
   --proof:         var(--accent);
   --mark:          var(--accent-3);
+  --ok:            #48d59a;   /* availability green: open to work, nothing earned */
   --rule:          #2b313a;
   --on-mark:       #1a1408;
 
@@ -390,6 +391,27 @@ section { padding: 96px 0; position: relative; }
   height: clamp(340px, 42vh, 440px);
   object-fit: cover;
   object-position: top center;
+  /* A thin light edge, like a printed photo border: the portrait is dark on dark,
+     so the white ring separates the shoulders from the sheet behind. Neutral
+     white on purpose -- the accent means "live" and the gold means "earned",
+     and the face is neither. Static, so reduced-motion users get the same frame. */
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .14),
+    inset 0 1px 0 rgba(255, 255, 255, .20),
+    0 0 0 1px rgba(255, 255, 255, .05),
+    0 18px 44px -20px rgba(0, 0, 0, .75);
+}
+/* the same light falls on the top of the sheet, so the frame does not float */
+.proof-sheet::after {
+  content: "";
+  position: absolute;
+  inset: 12px 12px auto 12px;
+  height: 120px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .07), transparent);
+  pointer-events: none;
+}
+@media (prefers-contrast: more) {
+  .proof-sheet img { box-shadow: inset 0 0 0 2px #fff, 0 0 0 1px rgba(255, 255, 255, .4); }
 }
 .crop {
   position: absolute;
@@ -414,14 +436,14 @@ section { padding: 96px 0; position: relative; }
 }
 .proof-cap dt { color: var(--text-muted); font-weight: 500; }
 .proof-cap dd { margin: 0; color: var(--text); font-weight: 600; text-align: right; }
-.proof-cap dd .open { color: var(--mark); }
+.proof-cap dd .open { color: var(--ok); }
 /* The availability dot from the old hero badge, kept as information,
    without the infinite pulse that used to ring it. */
 .pulse {
   display: inline-block;
   width: 7px; height: 7px;
   border-radius: 50%;
-  background: var(--mark);
+  background: var(--ok);
   vertical-align: 1px;
   margin-right: 7px;
 }
@@ -1248,7 +1270,7 @@ section { padding: 96px 0; position: relative; }
   flex: none;
   margin-right: 9px;
   border-radius: 50%;
-  background: var(--mark);
+  background: var(--ok);
 }
 
 /* CTA row. An inline <svg> adds ~2px of descender space to a flex button, so the

@@ -138,7 +138,8 @@ vercel --prod
 index.html   404.html   .nojekyll   RUN_LOCALLY.md
 css/style.css            js/main.js
 assets/Omar_Ali_Frontend_Developer_CV.pdf        (نسختان: صفحة / صفحتان)
-assets/images/*.jpg      (صورة البروفايل + صور الشهادات)
+assets/images/*.webp    (صورة البروفايل + صور الشهادات)
+assets/images/profile-og-1200x630.jpg   (كارت المشاركة 1.91:1 — نص + صورة)
 ```
 
 - أي ملف جديد (سكربت، نسخة احتياطية، مستند شخصي) لازم يفضل **خارج** هذا المجلد.
