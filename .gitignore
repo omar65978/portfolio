@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+.vscode/
+.idea/
+*.log
+dist/
+.cache/
+
+__pycache__/
+
+# local-only files: never publish these
+/tools/
+*.zip
+*.bak
+*.tmp
